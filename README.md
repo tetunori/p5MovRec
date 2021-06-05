@@ -1,14 +1,14 @@
 
 # Description 🎥
 **p5.MovRec** is a simple movie recording tool for p5.js.  
-You can generate a high quality movie of your sketch by adding just **2 lines** to the HTML.  
+You can generate a high quality movie from your sketch by adding just **2 lines** to the HTML.  
 Generated movies can be uploaded to Twitter or YouTube right away!
 
 This tool is for who...  
  - would like to make a movie of one's work easily.  
  - would like to upload one's work to **Twitter** and pursue simplicity rather than quality.
  - want Today to be the last day to wait for ffmpeg to concatenate a lot of still images of your work and render. 
- - As long as the image quality is improved, it's OK with converting to vp9 instead of h264.
+ - As long as the image quality is improved, it's OK with converting to `vp9` instead of `h264`.
 
 and is **NOT** for who...  
  - think the movie of one's work must be high quality and uncompressed.
@@ -33,14 +33,14 @@ Just insert 2 scripts after `p5.js` script in your `<head>`.
 ```
 
 ## JUST REC IT!
-1. Press 'r' key to start recording. `🎥Start Recording.` text will be shown in Console.  
+1. Press `r` key to start recording. `🎥Start Recording.` text will be shown in Console.  
 <img src="https://tetunori.github.io/p5MovRec/images/startRecording.png" alt="startRecording" width="375px">  
 
-2. Then, press `w` key to stop recording and instantly generate `webm` format movie! `✅Recorded.` text will be shown in Console. This `webm` format movie can be watched in your browser.  
+2. Then, press `w` key to stop recording and browser instantly generates `webm` format movie! `✅Recorded.` text will be also shown in Console. This `webm` format movie can be watched in your browser.  
 <img src="https://tetunori.github.io/p5MovRec/images/stopRecording.png" alt="stopRecording" width="375px"> 
 
 3. If you press `m` key to stop, `mp4` format movie will be generated little bit later. This movie is perfect for uploading for Twitter.  
-Movie files can be downloaded from here and are named `YYYYMMDDhhmmss.webm/mp4`.  
+Movie files can be downloaded like below and are named `YYYYMMDDhhmmss.webm/mp4`.  
 <img src="https://tetunori.github.io/p5MovRec/images/downloadMovies.png" alt="downloadMovies" width="500px"> 
 
 4. If you have already `keyPressed()` function, you need add start/stop-recording function in your `keyPressed()` like below. You can use `p5MovRec` instance and its methods `startRec()`, `stopRec()` and `setMovType()`.  
@@ -67,7 +67,7 @@ function keyPressed() {
 ### Key Operation Matrix
 |  Key  |  Note  |
 | ---- | ---- |
-|  `r` (**R**ecord)  |  Start(and Stop) Recording.  |
+|  `r` (**R**ecord)  |  Start Recording.  |
 |  `w` (**W**ebm)  |  Stop Recording and Generate `Webm` format movie.  |
 |  `m` (**M**p4)  |  Stop Recording and Generate `mp4` format movie.  |
 
@@ -100,11 +100,11 @@ draw=_=>{
 ```
 
 ### On Movie Quality
-Please refer to the following [Tips]() later.
+Please refer to the following [Tips](https://github.com/tetunori/p5MovRec#tips) later.
 
 
 # For more high quality and fine tuning.
-Since the simple usecase above is specialized for Twitter, it is simple and has chosen the `h264` codec. On the other hand, this tool also supports `vp9` codec, which can further improve the movie quality. It also allows you to fine-tune the timing and proceduere of start/end the recording and the parameters, so I will introduce those as well.
+Since the simple usecase above is specialized for Twitter, it is simple and has chosen the `h264` codec. On the other hand, this tool also supports `vp9` codec, which can further improve the movie quality. It also allows you to fine-tune the timing and procedure of start/stop the recording and the parameters, so I will introduce those as well.
 
 ## Import library
 Just insert 2 scripts after `p5.js` script in your `<head>`. Be carefull about **the URL is defferent** from the basic one. 
@@ -160,17 +160,17 @@ function keyPressed() {
 ## Tips
 ### Movie quality
 #### Codec
-the quality of `h264` codec on this tool is a little bit low compared to `vp9`. If you are concerned about the quality, please try `vp9` setting. But be careful that Twitter do not support `vp9` format. (YouTube might support it.)
+the quality of `h264` codec on this tool is a little bit low compared to `vp9`. If you are concerned about the quality, please try `vp9` setting. But be careful that Twitter does not support `vp9` format. (YouTube might support it.)
 
-### frameRate
+#### frameRate
 For controlling output movie frame rate, please adjust `frameRate()` in p5.js sketch. `frameRate(30)`, `frameRate(40)` and `frameRate(60)` I recommend for recording.
 
-### Canvas Size
-720 is currently best size for Twitter, I think.
-If you zoom in and out, the quality strongly depends on its zooming value. Please watch out the zooming value and the frame width/height of the output movie.
+#### Canvas Size
+`720` is currently best size for Twitter, I think.
+If you zoom in and out, the quality will change strongly depending on its zooming value. Please watch out the zooming value and the frame width/height of the output movie.
 
 ### Issue
-So far no issues.
+So far, there is no issues.
 
 # Licence
 This software is released under MIT License, see LICENSE.
