@@ -20,7 +20,7 @@ Now, the version is `0.5.0`. (alpha release)
 ## Environment 
 Assume PC(Win/Mac) Environment.
 Due to the dependency to `MediaRecorder` and `ffmpeg.wasm`, we highly recommend to use **Google Chrome**.  
-This tool works fine in both [P5 Editor](https://editor.p5js.org/) and [OpenProcessing](https://www.openprocessing.org/).  
+This tool works fine in both [P5 WebEditor](https://editor.p5js.org/) and [OpenProcessing](https://www.openprocessing.org/).  
 
 ## Import library
 Just insert 2 scripts after `p5.js` script in your `<head>`.  
