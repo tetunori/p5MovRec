@@ -73,8 +73,8 @@ function keyPressed() {
 
 ## Samples 
  - [Basic Sample On GitHub](https://tetunori.github.io/p5MovRec/sample/basic/)
- - [Basic Sample On P5 Web Editor](URL)  
- - [Basic Sample On OpenProcessing](URL)
+ - [Basic Sample On P5 Web Editor](https://editor.p5js.org/tetunori/sketches/cWvkz1E2_)  
+ - [Basic Sample On OpenProcessing](https://openprocessing.org/sketch/1212512)
 
 ## WARNING
 ### On `canvas`
@@ -154,8 +154,8 @@ function keyPressed() {
 
 ## Samples 
  - [Basic Sample On GitHub](https://tetunori.github.io/p5MovRec/sample/advanced/)
- - [Basic Sample On P5 Web Editor](URL)  
- - [Basic Sample On OpenProcessing](URL)
+ - [Basic Sample On P5 Web Editor](https://editor.p5js.org/tetunori/sketches/OFj1Ne9Bn)  
+ - [Basic Sample On OpenProcessing](https://openprocessing.org/sketch/1212513)
 
 ## Tips
 ### Movie quality
