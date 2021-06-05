@@ -190,6 +190,9 @@ This software is released under MIT License, see LICENSE.
 Tetsunori NAKAYAMA.
 
 # References
+Article (in Japanese only.)  
+https://qiita.com/tetunori_lego/items/c942eb2aad844b72dadb
+
 ffmpeg.wasm  
 https://github.com/ffmpegwasm/ffmpeg.wasm  
 https://github.com/ffmpegwasm/ffmpeg.wasm/blob/master/examples/browser/webcam.html  
