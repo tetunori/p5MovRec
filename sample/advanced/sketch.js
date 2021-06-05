@@ -57,7 +57,9 @@ const fillColors = [
 
 function setup() {
   createCanvas(STOMACHION_SIZE + MARGIN * 2, STOMACHION_SIZE + MARGIN * 2);
-  myP5MovRec = new P5MovRec(); 
+  const vbps = 2000000; // 2000kbps
+  myP5MovRec = new P5MovRec(P5MovRec.codecId.vp9, vbps );
+  // myP5MovRec = new P5MovRec(); 
   noStroke();
   setInitialValues();
 }

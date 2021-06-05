@@ -8,6 +8,7 @@
 class P5MovRec {
   movRecorder = undefined;
   chunks = [];
+  videoBPS = undefined;
 
   static codecId = {
     vp9: 'vp9',
@@ -27,8 +28,9 @@ class P5MovRec {
    * @param codec specify codec with P5MovRec.codecId.
    *              We support vp9 and H264.
    */
-  constructor(codec = P5MovRec.codecId.h264) {
+  constructor(codec = P5MovRec.codecId.h264, vbps = 20000000 /* 20,000 Kbps */ ) {
     this.codec = codec;
+    this.videoBPS = vbps;
     this.initMovRec();
   }
 
@@ -41,7 +43,7 @@ class P5MovRec {
 
     // Prepare MediaRecorder
     const options = {
-      videoBitsPerSecond: 20000000, // 20,000 Kbps
+      videoBitsPerSecond: this.videoBPS, // Default is 20,000 Kbps
       mimeType: 'video/webm;codecs=' + this.codec,
     };
     const recorder = new MediaRecorder(stream, options);

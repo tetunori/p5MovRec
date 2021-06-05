@@ -7,12 +7,12 @@ Generated movies can be uploaded to Twitter or YouTube right away!
 This tool is for who...  
  - would like to make a movie of one's work easily.  
  - would like to upload one's work to **Twitter** and pursue simplicity rather than quality.
- - want Today to be the last day to wait for ffmpeg to concatenate a lot of still images of your work and render. 
+ - want Today to be the last day to wait for `ffmpeg` to concatenate a lot of still images of your work and render. 
  - As long as the image quality is improved, it's OK with converting to `vp9` instead of `h264`.
 
 and is **NOT** for who...  
  - think the movie of one's work must be high quality and uncompressed.
- - love transcoding and fine tuning in ffmpeg.
+ - love transcoding and fine tuning in `ffmpeg`.
 
 Now, the version is 0.5.0. (alpha release)
 
@@ -39,7 +39,7 @@ Just insert 2 scripts after `p5.js` script in your `<head>`.
 2. Then, press `w` key to stop recording and browser instantly generates `webm` format movie! `✅Recorded.` text will be also shown in Console. This `webm` format movie can be watched in your browser.  
 <img src="https://tetunori.github.io/p5MovRec/images/stopRecording.png" alt="stopRecording" width="375px"> 
 
-3. If you press `m` key to stop, `mp4` format movie will be generated little bit later. This movie is perfect for uploading for Twitter.  
+3. If you press `m` key to stop, `mp4` format movie will be generated little bit later. This movie is good for uploading for Twitter etc...  
 Movie files can be downloaded like below and are named `YYYYMMDDhhmmss.webm/mp4`.  
 <img src="https://tetunori.github.io/p5MovRec/images/downloadMovies.png" alt="downloadMovies" width="500px"> 
 
@@ -153,9 +153,9 @@ function keyPressed() {
 ```
 
 ## Samples 
- - [Basic Sample On GitHub](https://tetunori.github.io/p5MovRec/sample/advanced/)
- - [Basic Sample On P5 Web Editor](https://editor.p5js.org/tetunori/sketches/OFj1Ne9Bn)  
- - [Basic Sample On OpenProcessing](https://openprocessing.org/sketch/1212513)
+ - [Advanced Sample On GitHub](https://tetunori.github.io/p5MovRec/sample/advanced/)
+ - [Advanced Sample On P5 Web Editor](https://editor.p5js.org/tetunori/sketches/OFj1Ne9Bn)  
+ - [Advanced Sample On OpenProcessing](https://openprocessing.org/sketch/1212513)
 
 ## Tips
 ### Movie quality
@@ -168,6 +168,9 @@ For controlling output movie frame rate, please adjust `frameRate()` in p5.js sk
 #### Canvas Size
 `720` is currently best size for Twitter, I think.
 If you zoom in and out, the quality will change strongly depending on its zooming value. Please watch out the zooming value and the frame width/height of the output movie.
+
+### Movie bitrate
+In some cases, the bitrate for the output movie get high. Since Twitter do transcode for too high bitrate movie, we would like to lower it. `P5MovRec()` has 2nd argument `videoBPS` so that we can change stream bitrate of `canvas`. (Plsease see `Advanced Sample` above.) But the impact of this setting is not large. Also, please change canvas size, lower frameRate and so on.
 
 ### Issue
 So far, there is no issues.
