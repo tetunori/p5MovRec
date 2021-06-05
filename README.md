@@ -29,19 +29,19 @@ Just insert 2 scripts after `p5.js` script in your `<head>`.
 
 <!-- INSERT HERE -->
 <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.10.0/dist/ffmpeg.min.js"></script>
-<script src="https://tetunori.github.io/p5.MovRec/dist/0.5.0/basic/p5MovRec.js"></script>
+<script src="https://tetunori.github.io/p5MovRec/dist/0.5.0/basic/p5MovRec.js"></script>
 ```
 
 ## JUST REC IT!
 1. Press 'r' key to start recording. `🎥Start Recording.` text will be shown in Console.  
-<img src="https://tetunori.github.io/p5.MovRec/images/startRecording.png" alt="startRecording" width="375px">  
+<img src="https://tetunori.github.io/p5MovRec/images/startRecording.png" alt="startRecording" width="375px">  
 
 2. Then, press `w` key to stop recording and instantly generate `webm` format movie! `✅Recorded.` text will be shown in Console. This `webm` format movie can be watched in your browser.  
-<img src="https://tetunori.github.io/p5.MovRec/images/stopRecording.png" alt="stopRecording" width="375px"> 
+<img src="https://tetunori.github.io/p5MovRec/images/stopRecording.png" alt="stopRecording" width="375px"> 
 
 3. If you press `m` key to stop, `mp4` format movie will be generated little bit later. This movie is perfect for uploading for Twitter.  
 Movie files can be downloaded from here and are named `YYYYMMDDhhmmss.webm/mp4`.  
-<img src="https://tetunori.github.io/p5.MovRec/images/downloadMovies.png" alt="downloadMovies" width="500px"> 
+<img src="https://tetunori.github.io/p5MovRec/images/downloadMovies.png" alt="downloadMovies" width="500px"> 
 
 4. If you have already `keyPressed()` function, you need add start/stop-recording function in your `keyPressed()` like below. You can use `p5MovRec` instance and its methods `startRec()`, `stopRec()` and `setMovType()`.  
 ```javascript
@@ -72,7 +72,7 @@ function keyPressed() {
 |  `m` (**M**p4)  |  Stop Recording and Generate `mp4` format movie.  |
 
 ## Samples 
- - [Basic Sample On GitHub](https://tetunori.github.io/p5.MovRec/sample/basic/)
+ - [Basic Sample On GitHub](https://tetunori.github.io/p5MovRec/sample/basic/)
  - [Basic Sample On P5 Web Editor](URL)  
  - [Basic Sample On OpenProcessing](URL)
 
@@ -113,7 +113,7 @@ Just insert 2 scripts after `p5.js` script in your `<head>`. Be carefull about *
 
 <!-- INSERT HERE -->
 <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.10.0/dist/ffmpeg.min.js"></script>
-<script src="https://tetunori.github.io/p5.MovRec/dist/0.5.0/advanced/p5MovRec.js"></script>
+<script src="https://tetunori.github.io/p5MovRec/dist/0.5.0/advanced/p5MovRec.js"></script>
 ```
 
 ## Use in your Sketch
@@ -153,7 +153,7 @@ function keyPressed() {
 ```
 
 ## Samples 
- - [Basic Sample On GitHub](https://tetunori.github.io/p5.MovRec/sample/advanced/)
+ - [Basic Sample On GitHub](https://tetunori.github.io/p5MovRec/sample/advanced/)
  - [Basic Sample On P5 Web Editor](URL)  
  - [Basic Sample On OpenProcessing](URL)
 
