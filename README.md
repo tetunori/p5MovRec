@@ -8,13 +8,13 @@ This tool is for who...
  - would like to make a movie of one's work easily.  
  - would like to upload one's work to **Twitter** and pursue simplicity rather than quality.
  - want Today to be the last day to wait for `ffmpeg` to concatenate a lot of still images of your work and render. 
- - As long as the image quality is improved, it's OK with converting to `vp9` instead of `h264`.
+ - As long as the image quality is improved, it's OK with`vp9` codec instead of `h264` codec.
 
 and is **NOT** for who...  
  - think the movie of one's work must be high quality and uncompressed.
  - love transcoding and fine tuning in `ffmpeg`.
 
-Now, the version is 0.5.0. (alpha release)
+Now, the version is `0.5.0`. (alpha release)
 
 # Simple Usage
 ## Environment 
@@ -78,7 +78,7 @@ function keyPressed() {
 
 ## WARNING
 ### On `canvas`
-Since this tool makes movie from the stream of `canvas` created in `createCanvas()`, `#つぶやきProcessing` guys and `#p5t` guys should be move `createCanvas()` into `setup()` on recording like below.  
+Since this tool makes movie from the stream of `canvas` created in `createCanvas()`, `#つぶやきProcessing` guys and `#p5t` guys should move `createCanvas()` into `setup()` on recording like below.  
 
 Starndard `#つぶやきProcessing` code: 
 ```javascript
@@ -170,7 +170,15 @@ For controlling output movie frame rate, please adjust `frameRate()` in p5.js sk
 If you zoom in and out, the quality will change strongly depending on its zooming value. Please watch out the zooming value and the frame width/height of the output movie.
 
 ### Movie bitrate
-In some cases, the bitrate for the output movie get high. Since Twitter do transcode for too high bitrate movie, we would like to lower it. `P5MovRec()` has 2nd argument `videoBPS` so that we can change stream bitrate of `canvas`. (Plsease see `Advanced Sample` above.) But the impact of this setting is not large. Also, please change canvas size, lower frameRate and so on.
+In some cases, the bitrate for the output movie becomes so high. Since Twitter do transcode for too high bitrate movie, we would like to lower it. By using `P5MovRec()`'s 2nd argument `videoBPS`, we can change stream bitrate of `canvas`. (Plsease see `Advanced Sample` above.) But the impact of this setting depends on each case. So please change canvas size, lower frameRate and so on.
+```javascript
+function setup() {
+  createCanvas( 720, 720 );
+  const vbps = 2000000; // 2000kbps
+  myP5MovRec = new P5MovRec(P5MovRec.codecId.vp9, vbps );
+  ...
+}
+```
 
 ### Issue
 So far, there is no issues.
