@@ -4,7 +4,7 @@
 You can generate a high quality movie from your sketch by adding just **2 lines** to the HTML.  
 Generated movies can be uploaded to Twitter or YouTube right away!
 
-<video src="https://tetunori.github.io/p5MovRec/images/sampleVideo.mp4" controls></video>
+![sampleVideo](https://tetunori.github.io/p5MovRec/images/sampleVideo.mp4)
 
 This tool is for who...  
  - would like to make a movie of one's work easily.  
