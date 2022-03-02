@@ -6,12 +6,7 @@
 //     case 49: //1: Start record
 //       myP5MovRec.startRec();
 //       break;
-//     case 50: //2: set webm, stop
-//       myP5MovRec.setMovType(P5MovRec.movTypeId.webm);
-//       myP5MovRec.stopRec();
-//       break;
-//     case 51: //3: set mp4, stop
-//       myP5MovRec.setMovType(P5MovRec.movTypeId.mp4);
+//     case 50: //2: Stop record
 //       myP5MovRec.stopRec();
 //       break;
 //     default:

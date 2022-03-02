@@ -6,12 +6,7 @@ function keyPressed() {
     case 49: //1: Start record
       myP5MovRec.startRec();
       break;
-    case 50: //2: set webm, stop
-      // myP5MovRec.setMovType(P5MovRec.movTypeId.webm); // webm is default value
-      myP5MovRec.stopRec();
-      break;
-    case 51: //3: set mp4, stop
-      myP5MovRec.setMovType(P5MovRec.movTypeId.mp4); // for mp4 container
+    case 50: //2: Stop record
       myP5MovRec.stopRec();
       break;
     default:
@@ -57,9 +52,7 @@ const fillColors = [
 
 function setup() {
   createCanvas(STOMACHION_SIZE + MARGIN * 2, STOMACHION_SIZE + MARGIN * 2);
-  const vbps = 2000000; // 2000kbps
-  myP5MovRec = new P5MovRec(P5MovRec.codecId.vp9, vbps );
-  // myP5MovRec = new P5MovRec(); 
+  myP5MovRec = new P5MovRec();
   noStroke();
   setInitialValues();
 }
