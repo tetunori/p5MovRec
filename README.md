@@ -5,7 +5,7 @@ You can generate a high quality movie from your sketch by adding just **1 line**
 Generated movies can be uploaded to YouTube right away!  
 (Currently for Twitter, need conversion.)
 
-★動画取り直し
+★動画取り直し予定
 https://user-images.githubusercontent.com/14086390/121185655-405c1b00-c8a1-11eb-932f-2d16820f9d34.mp4
 
 This tool is for who...  
@@ -44,7 +44,7 @@ Just insert 1 script after `p5.js` script in your `<head>`.
 3. Movie files can be downloaded like below and are named `YYYYMMDDhhmmss.webm`.  
 <img src="https://tetunori.github.io/p5MovRec/images/downloadMovies.png" alt="downloadMovies" width="500px"> 
 
-4. If you have already `keyPressed()` function, you need add start/stop-recording function in your `keyPressed()` like below. You can use `p5MovRec` instance and its methods `startRec()` and `stopRec()`.  
+4. If you have already `keyPressed()` function, you need add start/stop-recording function in your `keyPressed()` like below. You can use `p5.MovRec` instance and its methods `startRec()` and `stopRec()`.  
 
 ```javascript
 function keyPressed() {
@@ -69,7 +69,7 @@ function keyPressed() {
 
 ## Samples 
  - [Basic Sample On GitHub](https://tetunori.github.io/p5MovRec/sample/basic/)
- - [Basic Sample On OpenProcessing](https://openprocessing.org/sketch/1212512)　★更新
+ - [Basic Sample On OpenProcessing](https://openprocessing.org/sketch/1212512)　
 
 ## WARNING
 ### On `canvas`
@@ -95,7 +95,7 @@ draw=_=>{
 ```
 
 # If you would like to dicide recoding timing.
-For advanced people, I will introduce how to make an instance for `p5MovRec`.
+For advanced people, I will introduce how to make an instance for `p5.MovRec`.
 
 ## Import library
 Just insert 1 script after `p5.js` script in your `<head>`. Be carefull about **the URL is defferent** from the basic one. 
@@ -140,7 +140,7 @@ function keyPressed() {
 
 ## Samples 
  - [Advanced Sample On GitHub](https://tetunori.github.io/p5MovRec/sample/advanced/)
- - [Advanced Sample On OpenProcessing](https://openprocessing.org/sketch/1212513) ★更新
+ - [Advanced Sample On OpenProcessing](https://openprocessing.org/sketch/1212513) 
 
 ### Issue
 So far, there is no issues.
