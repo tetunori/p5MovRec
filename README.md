@@ -5,8 +5,7 @@ You can generate a high quality movie from your sketch by adding just **1 line**
 Generated movies can be uploaded to YouTube right away!  
 (Currently for Twitter, need conversion.)
 
-★動画取り直し予定
-https://user-images.githubusercontent.com/14086390/121185655-405c1b00-c8a1-11eb-932f-2d16820f9d34.mp4
+https://user-images.githubusercontent.com/14086390/156571655-bd16b9bf-8520-4991-8bfa-1b68b3a56a22.mp4
 
 This tool is for who...  
  - would like to make a movie of one's work easily.  
