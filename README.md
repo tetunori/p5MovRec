@@ -2,13 +2,10 @@
 # Description 🎥
 **p5.MovRec** is a simple movie recording tool for p5.js.  
 You can generate a high quality movie from your sketch by adding just **1 line** to the HTML.  
-Generated 
-
-https://user-images.githubusercontent.com/14086390/156571916-22338421-a9d4-4b19-9099-ad8d63e3f8f8.mp4
-
-movies can be uploaded to YouTube right away!  
+Generated movies can be uploaded to YouTube right away!  
 (Currently for Twitter, need conversion.)
 
+https://user-images.githubusercontent.com/14086390/156571916-22338421-a9d4-4b19-9099-ad8d63e3f8f8.mp4
 
 This tool is for who...  
  - would like to make a movie of one's work easily.  
